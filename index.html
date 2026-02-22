@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pt-BR"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;EmagrecimentoMedico - Consulta Médica Online e Receita para Caneta Emagrecedora&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,700&amp;family=Source+Sans+3:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green: #0F6148;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-light: #5BA832;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-dark: #0A4533;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-bg: #E8F5F0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-subtle: #F0F9F5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #5BA832;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--btn-cta: #5BA832;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--btn-cta-hover: #4A8F28;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #1A1A1A;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-muted: #4A5E55;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--white: #FFFFFF;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #C8E0D4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius-sm: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html { scroll-behavior: smooth; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Source Sans 3', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── NAV ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.95);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(10px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 64px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -0.5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── BUTTONS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--btn-cta);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 16px rgba(91,168,50,0.35);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--btn-cta-hover);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 8px 24px rgba(91,168,50,0.45);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-lg {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 44px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 17px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-center { display: block; width: fit-content; margin: 0 auto; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── HERO ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(160deg, #0A4533 0%, #0F6148 50%, #127554 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 620px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: -100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: -100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero::after {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bottom: -150px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: -80px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.04);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 60px 24px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: end;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-content { padding-bottom: 60px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Merriweather', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(32px, 4vw, 50px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-sub {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-steps {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-steps p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-step {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-step + .hero-step { border-top: 1px solid rgba(255,255,255,0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step-num {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-step span { font-size: 15px; line-height: 1.4; opacity: 0.95; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-perks {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-perk {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-perk::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '✓';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-end;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-img img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-img-placeholder {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 340px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 420px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 24px 24px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.15);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: rgba(255,255,255,0.5);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-img-placeholder .phone-icon { font-size: 64px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── SECTIONS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section { padding: 80px 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container { max-width: 1100px; margin: 0 auto; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Merriweather', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(28px, 3.5vw, 42px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── FEATURES ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features { background: #0F6148; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features .section-title { color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features &gt; .container &gt; p { color: rgba(255,255,255,0.85) !important; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-card:hover { box-shadow: 0 8px 24px rgba(46,125,94,0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-card p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── STEPS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.steps { background: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.steps-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(4, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.steps-grid::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 12.5%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 12.5%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step-circle {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 16px rgba(15,97,72,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 17px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step-card p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── BENEFITS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefits { background: var(--green-bg); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefits-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefits-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefits-list li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefit-check {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.benefits-disclaimer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-column: 1 / -1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── MEDICATIONS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.medications { background: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 200px 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-card:hover { box-shadow: 0 8px 32px rgba(46,125,94,0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-card.reverse { direction: rtl; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-card.reverse &gt; * { direction: ltr; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-img-wrap {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-img-wrap img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 220px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-img-placeholder {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 160px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-content h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-content &gt; p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-content h4 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-list li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.med-list li::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '→';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.expert-tip {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #FFF8EC, #FFF3DC);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #F4D08A;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #7A5500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.expert-tip strong { display: block; margin-bottom: 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: #B87800; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── TESTIMONIALS ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonials { background: var(--green); color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonials .section-title { color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonials-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-card blockquote {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 17px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.95;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-card cite {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-style: normal;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rating-bar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rating-stars { font-size: 28px; letter-spacing: 4px; margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rating-text { font-size: 18px; font-weight: 600; opacity: 0.9; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rating-sub { font-size: 14px; opacity: 0.7; margin-top: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonials .btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--btn-cta);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonials .btn-primary:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--btn-cta-hover);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── FAQ ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq { background: #0F6148; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq .section-title { color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-list {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 760px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-question {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: background 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-question:hover { background: var(--green-subtle); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green-bg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--green);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--green); color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-answer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: max-height 0.35s ease, padding 0.35s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.faq-item.open .faq-answer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 24px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── CTA FINAL ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-final {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #0A4533, #0F6148);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 80px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-final h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Merriweather', serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(28px, 3.5vw, 44px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-final p { font-size: 18px; opacity: 0.85; margin-bottom: 36px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-final .btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--btn-cta);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 17px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-final .btn-primary:hover { background: var(--btn-cta-hover); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── FOOTER ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #071F16;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: rgba(255,255,255,0.7);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-brand {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-tagline { font-size: 13px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.08);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(255,255,255,0.15);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-links a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: rgba(255,255,255,0.6);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: color 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-links a:hover { color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-crm {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top: 1px solid rgba(255,255,255,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ── RESPONSIVE ── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 900px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero-inner { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero-img { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.steps-grid { grid-template-columns: repeat(2, 1fr); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.steps-grid::before { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.benefits-inner { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.med-card { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.med-card.reverse { direction: ltr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.testimonials-grid { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.steps-grid { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.footer-inner { flex-direction: column; align-items: flex-start; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- NAV --&gt;</p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="nav-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="/" class="logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="logo-icon"&gt;M&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>EmagrecimentoMedico</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HERO --&gt;</p>
+<p class="p1">&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Quer usar uma caneta emagrecedora?&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="hero-sub"&gt;Faça sua consulta em até 10 minutos!&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Com a EmagrecimentoMedico é assim:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step-num"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Você informa seus dados&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step-num"&gt;2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Confirma a consulta no valor de &lt;strong&gt;R$ 69,90&lt;/strong&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="step-num"&gt;3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Em até 10 minutos está sendo atendido pelo médico&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-perks"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-perk"&gt;Sem uma longa espera&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-perk"&gt;Sem agendamento prévio&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-perk"&gt;Sem precisar faltar a qualquer compromisso do dia&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="btn btn-primary btn-lg"&gt;INICIAR CONSULTA&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-img"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://emagrecer.mediquo.com.br/images/hero-phones.png"</p>
+<p class="p1"><span class="Apple-converted-space">           </span>alt="EmagrecimentoMedico App - Consulta médica online e prescrição de canetas emagrecedoras"</p>
+<p class="p1"><span class="Apple-converted-space">           </span>onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-img-placeholder" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="phone-icon"&gt;📱&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;App EmagrecimentoMedico&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- FEATURES --&gt;</p>
+<p class="p1">&lt;section class="features"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;EmagrecimentoMedico está com você a cada passo&lt;br&gt;do tratamento para emagrecer&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="text-align:center; color:var(--text-muted); max-width:680px; margin: -28px auto 40px; font-size:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>A qualquer momento que precisar, um médico da EmagrecimentoMedico estará disponível para fazer sua consulta para você ter sua caneta emagrecedora.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="features-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;⚡&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;A consulta online é rápida e prática.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🚫&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Sem burocracia e triagens! Fale direto com o médico.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;📄&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;A receita digital chega em minutos e é válida em todo o Brasil.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🎯&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;O foco é em você e no que deseja conquistar com a caneta para emagrecer.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;💳&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Facilidade de pagamento da consulta por PIX ou cartão de crédito.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🕐&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Médicos à disposição para atender você a qualquer momento do dia.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🗓️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Flexibilidade para realizar a consulta em até 24h após a confirmação.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn btn-primary btn-center"&gt;QUERO EMAGRECER COM SAÚDE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HOW IT WORKS --&gt;</p>
+<p class="p1">&lt;section class="steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Sua agenda de cuidados é você quem faz&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="text-align:center; color:var(--text-muted); max-width:600px; margin: -28px auto 56px; font-size:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Na EmagrecimentoMedico é você quem escolhe quando ser atendido pelo médico.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="steps-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-circle"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Faça seu cadastro&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Envie suas informações previamente para o atendimento médico ser mais efetivo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-circle"&gt;2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Confirme sua consulta&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Escolha a melhor forma de pagamento e confirme o atendimento online com o profissional pela EmagrecimentoMedico.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-circle"&gt;3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Faça a sua consulta&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Aguarde uns instantes. Sua consulta inicia em até 10 minutos após a confirmação. No caso de algum imprevisto, você pode realizá-la em até 24h.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-circle"&gt;4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Receba a sua receita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Após a avaliação e orientação médica, você pode iniciar o tratamento com a caneta emagrecedora com segurança.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn btn-primary btn-center"&gt;QUERO INICIAR A CONSULTA&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- BENEFITS --&gt;</p>
+<p class="p1">&lt;section class="benefits"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Você vai sentir a sua vida mudar com a EmagrecimentoMedico&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="benefits-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="color:var(--text-muted); margin-bottom:24px; line-height:1.7;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>O atendimento médico online para o tratamento com a caneta emagrecedora vai ajudar você a perder o peso necessário para melhorar sua saúde e bem-estar.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="benefits-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="benefit-check"&gt;✓&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A orientação médica permite cuidar da perda de peso de forma saudável, sem medidas exageradas.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="benefit-check"&gt;✓&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Toda caneta injetável para emagrecer atua em hormônios responsáveis pela fome e saciedade.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="benefit-check"&gt;✓&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A ação da caneta para emagrecimento controla o apetite e reduz a vontade de comer.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="benefit-check"&gt;✓&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A alimentação regulada colabora para diminuir a gordura visceral e melhorar a composição corporal.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="background:white; border-radius:var(--radius); padding:32px; border:1px solid var(--border); box-shadow: 0 8px 32px rgba(46,125,94,0.08);"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:48px; text-align:center; margin-bottom:16px;"&gt;💉&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 style="font-size:20px; font-weight:700; text-align:center; margin-bottom:12px; color:var(--green-dark);"&gt;Canetas Emagrecedoras&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:14px; color:var(--text-muted); text-align:center; line-height:1.6;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Medicamentos injetáveis aprovados que atuam nos hormônios responsáveis pela fome, promovendo maior saciedade e controle do apetite.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="font-size:14px; color:var(--text-muted); background:white; border:1px solid var(--border); border-radius:var(--radius-sm); padding:20px 24px; line-height:1.6; margin-bottom:40px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>⚕️ As canetas injetáveis para emagrecer só podem ser usadas após avaliação e indicação médica. Conte com os profissionais da EmagrecimentoMedico para orientar sobre o tratamento para emagrecer adequado para você.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn btn-primary btn-center"&gt;QUERO FAZER UMA CONSULTA&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- MEDICATIONS --&gt;</p>
+<p class="p1">&lt;section class="medications"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Canetas emagrecedoras recomendadas por especialistas&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="med-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Mounjaro --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="med-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-img-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://emagrecer.mediquo.com.br/images/Mounjaro - Tirzepatida.png"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>alt="Mounjaro (Tirzepatida)"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="med-img-placeholder" style="display:none;"&gt;💉&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Mounjaro (Tirzepatida)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;É um medicamento injetável altamente eficaz no tratamento da obesidade ou sobrepeso. A ação combinada dos hormônios GLP-1 e GIP melhora o controle do apetite, regula os níveis de açúcar no sangue e favorece a perda de peso.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Ao usar a caneta emagrecedora Mounjaro você:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="med-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;reduzirá seu desejo por comida;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;sentirá maior saciedade após as refeições;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;diminuirá a gordura visceral;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;melhorará sua composição corporal;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;irá prevenir doenças relacionadas à obesidade.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Ozempic --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="med-card reverse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-img-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://emagrecer.mediquo.com.br/images/Ozempic - Semaglutida.png"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>alt="Wegovy / Ozempic (Semaglutida)"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="med-img-placeholder" style="display:none;"&gt;💉&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Wegovy / Ozempic (Semaglutida)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;É um medicamento injetável desenvolvido inicialmente para tratar a diabetes tipo 2, mas também eficaz no tratamento para perda de peso. A substância imita a ação do hormônio GLP-1, que controla o apetite e promove saciedade.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Ao usar a caneta emagrecedora Ozempic você:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="med-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;beneficiará sua saúde cardiovascular;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;irá prevenir o desenvolvimento de doenças associadas à obesidade;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;sentirá maior saciedade após as refeições;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;reduzirá seu desejo por comida.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Saxenda --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="med-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-img-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://emagrecer.mediquo.com.br/images/Saxenda - Liraglutida.png"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>alt="Saxenda (Liraglutida)"</p>
+<p class="p1"><span class="Apple-converted-space">               </span>onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="med-img-placeholder" style="display:none;"&gt;💉&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="med-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Saxenda (Liraglutida)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;É um medicamento injetável que provoca no organismo a mesma ação do hormônio GLP-1. É aprovado para perda de peso em adultos com obesidade ou sobrepeso e indicado para regular o apetite e aumentar a saciedade.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Ao usar a caneta emagrecedora Saxenda você:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="med-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;diminuirá o peso corporal;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;consumirá porções menores de alimentos nas refeições;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;irá prevenir o desenvolvimento de doenças associadas à obesidade;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;reduzirá seu desejo por comida.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="expert-tip"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;strong&gt;👉 Dica do especialista EmagrecimentoMedico&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Você pode potencializar o efeito das canetas emagrecedoras se incluir no tratamento uma dieta regulada de baixo teor calórico e a prática regular de atividade física.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- TESTIMONIALS --&gt;</p>
+<p class="p1">&lt;section class="testimonials"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Tratamento para emagrecer com confiança&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="text-align:center; opacity:0.85; margin:-28px auto 40px; max-width:600px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Veja as recomendações de quem já iniciou o tratamento com a caneta para emagrecer pela EmagrecimentoMedico.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="rating-bar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rating-stars"&gt;★★★★★&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rating-text"&gt;Nota média: 4,9/5&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rating-sub"&gt;baseada em milhares de atendimentos&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="testimonials-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testimonial-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;blockquote&gt;"Consulta rápida, médica muito atenciosa. Consegui minha receita para iniciar o tratamento na mesma hora."&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;cite&gt;– Fernanda, 29 anos&lt;/cite&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testimonial-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;blockquote&gt;"Atendimento excelente, sem burocracia e com segurança. Recomendo muito."&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;cite&gt;– Paulo, 41 anos&lt;/cite&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn btn-primary btn-center"&gt;QUERO COMEÇAR MEU TRATAMENTO&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- FAQ --&gt;</p>
+<p class="p1">&lt;section class="faq"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Queremos que você se sinta bem, sem dúvidas&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faq-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Quanto tempo demora para começar a consulta?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Após a confirmação do pagamento, sua consulta é iniciada em até 10 minutos. Caso haja algum imprevisto, você pode realizá-la em até 24 horas.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Vou receber uma receita para comprar a caneta emagrecedora?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Sim! Se o médico avaliar que o tratamento é adequado para você, uma receita digital é emitida em minutos e é válida em todo o Brasil.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>O atendimento é pelo WhatsApp ou pelo App EmagrecimentoMedico?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>O atendimento é realizado pelo App EmagrecimentoMedico, disponível para iOS e Android. É rápido, seguro e totalmente sigiloso.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>A caneta para emagrecer é um medicamento seguro?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Sim, quando utilizada sob orientação médica adequada. Os medicamentos disponíveis são aprovados pela ANVISA e recomendados por especialistas para o tratamento da obesidade e sobrepeso.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Posso parcelar o pagamento da consulta?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Sim! Você pode pagar por PIX ou parcelar no cartão de crédito. Escolha a opção mais conveniente para você no momento da confirmação.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Posso fazer a consulta pelo meu plano de saúde?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>No momento, o atendimento pela EmagrecimentoMedico não é coberto por planos de saúde. A consulta é paga diretamente pelo valor de R$ 69,90.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Preciso ter o encaminhamento de outro especialista para fazer a consulta pelo EmagrecimentoMedico?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Não! Você fala diretamente com o médico, sem triagens ou encaminhamentos. É tudo simples, rápido e sem burocracia.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="faq-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="faq-question" onclick="toggleFAQ(this)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Há uma triagem ou direcionamento para médico específico?</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="faq-icon"&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faq-answer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Não há triagem. Você é atendido diretamente por um médico da EmagrecimentoMedico, especializado no tratamento para emagrecer.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CTA FINAL --&gt;</p>
+<p class="p1">&lt;section class="cta-final"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Não deixe para amanhã o tratamento para emagrecer que você pode iniciar hoje&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Aproveite a consulta 100% online para falar com o médico e já começar a usar a caneta para emagrecer.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="btn btn-primary"&gt;FAZER A CONSULTA AGORA&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- FOOTER --&gt;</p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="footer-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="footer-brand"&gt;EmagrecimentoMedico&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="footer-tagline"&gt;Consultas médicas online com prescrição rápida, segura e legal.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-badge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>🔒 Consulta 100% segura e sigilosa</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://mediquo.com.br/"&gt;Sobre&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="/termos-de-uso"&gt;Termos de Uso&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="/politicas-de-privacidade"&gt;Políticas de Privacidade&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-crm"&gt;Dr Eugenio Gracietti Streliaev. CRM-SC 6604&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function toggleFAQ(btn) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const item = btn.closest('.faq-item');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const isOpen = item.classList.contains('open');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.faq-item.open').forEach(el =&gt; el.classList.remove('open'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!isOpen) item.classList.add('open');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Scroll reveal</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>entries.forEach(e =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (e.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>e.target.style.opacity = '1';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>e.target.style.transform = 'translateY(0)';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}, { threshold: 0.1 });</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('.feature-card, .step-card, .med-card, .testimonial-card, .faq-item').forEach(el =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.style.opacity = '0';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.style.transform = 'translateY(20px)';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>observer.observe(el);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
