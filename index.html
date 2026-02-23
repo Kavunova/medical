@@ -353,6 +353,35 @@
       line-height: 1.5;
     }
 
+    /* ── STORE BUTTONS ── */
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .store-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    .store-btn--apple { background: #000; }
+    .store-btn--google { background: #000; }
+    .store-btn svg { flex-shrink: 0; }
+    .store-btn-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
+    .store-btn-text small { font-size: 11px; opacity: 0.8; }
+    .store-btn-text strong { font-size: 17px; font-weight: 600; }
+
     /* ── BENEFITS ── */
     .benefits { background: var(--green-bg); }
     .benefits-inner {
@@ -695,36 +724,36 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-content">
-      <h1>Quer usar uma caneta emagrecedora?</h1>
-      <p class="hero-sub">Faça sua consulta em até 10 minutos!</p>
+      <h1>Quer começar a usar uma caneta emagrecedora?</h1>
+      <p class="hero-sub">Sua consulta pode começar em até 10 minutos!</p>
 
       <div class="hero-steps">
-        <p>Com a Emagrecimento Medico é assim:</p>
+        <p>Na Emagrecimento Medico funciona assim:</p>
         <div class="hero-step">
           <div class="step-num">1</div>
-          <span>Você informa seus dados</span>
+          <span>Informe seus dados</span>
         </div>
         <div class="hero-step">
           <div class="step-num">2</div>
-          <span>Confirma a consulta no valor de <strong>R$ 69,90</strong></span>
+          <span>Confirme a consulta por <strong>R$ 69,90</strong></span>
         </div>
         <div class="hero-step">
           <div class="step-num">3</div>
-          <span>Em até 10 minutos está sendo atendido pelo médico</span>
+          <span>Em até 10 minutos você já está em atendimento com o médico</span>
         </div>
       </div>
 
       <div class="hero-perks">
-        <div class="hero-perk">Sem uma longa espera</div>
-        <div class="hero-perk">Sem agendamento prévio</div>
-        <div class="hero-perk">Sem precisar faltar a qualquer compromisso do dia</div>
+        <div class="hero-perk">Sem filas de espera</div>
+        <div class="hero-perk">Sem necessidade de agendamento prévio</div>
+        <div class="hero-perk">Sem precisar abrir mão de nenhum compromisso</div>
       </div>
 
-      <a href="#" class="btn btn-primary btn-lg">INICIAR CONSULTA</a>
+      <a href="#agendamento" class="btn btn-primary btn-lg">INICIAR CONSULTA</a>
     </div>
 
     <div class="hero-img">
-      <img src="https://emagrecer.mediquo.com.br/images/hero-phones.png"
+      <img src="images/hero-phones.png"
            alt="Emagrecimento Medico App - Consulta médica online e prescrição de canetas emagrecedoras"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
       <div class="hero-img-placeholder" style="display:none;">
@@ -738,102 +767,113 @@
 <!-- FEATURES -->
 <section class="features">
   <div class="container">
-    <h2 class="section-title">Emagrecimento Medico está com você a cada passo<br>do tratamento para emagrecer</h2>
+    <h2 class="section-title">A Emagrecimento Medico acompanha você em cada etapa<br>do tratamento para emagrecer</h2>
     <p style="text-align:center; color:var(--text-muted); max-width:680px; margin: -28px auto 40px; font-size:16px;">
-      A qualquer momento que precisar, um médico da Emagrecimento Medico estará disponível para fazer sua consulta para você ter sua caneta emagrecedora.
+      Sempre que precisar, um médico da Emagrecimento Medico estará pronto para atendê-lo e garantir sua caneta emagrecedora.
     </p>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">⚡</div>
-        <p>A consulta online é rápida e prática.</p>
+        <p>Consulta online rápida e sem complicação.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🚫</div>
-        <p>Sem burocracia e triagens! Fale direto com o médico.</p>
+        <p>Nada de burocracia ou triagens! Converse diretamente com o médico.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📄</div>
-        <p>A receita digital chega em minutos e é válida em todo o Brasil.</p>
+        <p>Sua receita digital fica pronta em minutos, com validade em todo o Brasil.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🎯</div>
-        <p>O foco é em você e no que deseja conquistar com a caneta para emagrecer.</p>
+        <p>Todo o atendimento é centrado em você e nos seus objetivos com a caneta para emagrecer.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">💳</div>
-        <p>Facilidade de pagamento da consulta por PIX ou cartão de crédito.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🕐</div>
-        <p>Médicos à disposição para atender você a qualquer momento do dia.</p>
+        <div class="feature-icon">🏥</div>
+        <p>Atendimento com a sua carteirinha da UNIMED.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🗓️</div>
-        <p>Flexibilidade para realizar a consulta em até 24h após a confirmação.</p>
+        <p>Você tem até 24h após a confirmação para realizar sua consulta.</p>
       </div>
     </div>
-    <a href="#" class="btn btn-primary btn-center">QUERO EMAGRECER COM SAÚDE</a>
+    <a href="#agendamento" class="btn btn-primary btn-center">QUERO EMAGRECER COM SAÚDE</a>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="steps">
+<section id="agendamento" class="steps">
   <div class="container">
-    <h2 class="section-title">Sua agenda de cuidados é você quem faz</h2>
+    <h2 class="section-title">Agendamento prático pelo UNIMED</h2>
     <p style="text-align:center; color:var(--text-muted); max-width:600px; margin: -28px auto 56px; font-size:16px;">
-      Na Emagrecimento Medico é você quem escolhe quando ser atendido pelo médico.
+      Marque sua consulta de maneira simples e ágil pelo aplicativo da UNIMED.
     </p>
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-circle">1</div>
-        <h3>Faça seu cadastro</h3>
-        <p>Envie suas informações previamente para o atendimento médico ser mais efetivo.</p>
+        <h3>Baixe o aplicativo da UNIMED</h3>
+        <p>Disponível para iOS e Android. Instale o app e acesse com os dados da sua carteirinha.</p>
       </div>
       <div class="step-card">
         <div class="step-circle">2</div>
-        <h3>Confirme sua consulta</h3>
-        <p>Escolha a melhor forma de pagamento e confirme o atendimento online com o profissional pela Emagrecimento Medico.</p>
+        <h3>Agende sua consulta pelo app</h3>
+        <p>Selecione o melhor horário para a sua rotina e marque a consulta diretamente pelo aplicativo.</p>
       </div>
       <div class="step-card">
         <div class="step-circle">3</div>
-        <h3>Faça a sua consulta</h3>
-        <p>Aguarde uns instantes. Sua consulta inicia em até 10 minutos após a confirmação. No caso de algum imprevisto, você pode realizá-la em até 24h.</p>
+        <h3>Realize a sua consulta</h3>
+        <p>Em poucos instantes, a consulta começa — até 10 minutos após a confirmação. Se houver algum imprevisto, você pode reagendar em até 24h.</p>
       </div>
       <div class="step-card">
         <div class="step-circle">4</div>
-        <h3>Receba a sua receita</h3>
-        <p>Após a avaliação e orientação médica, você pode iniciar o tratamento com a caneta emagrecedora com segurança.</p>
+        <h3>Receba sua prescrição</h3>
+        <p>Com a avaliação e orientação do médico concluídas, você já pode dar início ao tratamento com a caneta emagrecedora de forma segura.</p>
       </div>
     </div>
-    <a href="#" class="btn btn-primary btn-center">QUERO INICIAR A CONSULTA</a>
+    <div class="store-buttons">
+      <a href="https://apps.apple.com/br/app/unimed-cliente/id1239015880" target="_blank" rel="noopener" class="store-btn store-btn--apple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 384 512" fill="white"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <div class="store-btn-text">
+          <small>Baixe na</small>
+          <strong>App Store</strong>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=br.com.unimed.beneficiario" target="_blank" rel="noopener" class="store-btn store-btn--google">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512" fill="white"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+        <div class="store-btn-text">
+          <small>Disponível no</small>
+          <strong>Google Play</strong>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- BENEFITS -->
 <section class="benefits">
   <div class="container">
-    <h2 class="section-title">Você vai sentir a sua vida mudar com a Emagrecimento Medico</h2>
+    <h2 class="section-title">Sinta sua vida se transformar com a Emagrecimento Medico</h2>
     <div class="benefits-inner">
       <div>
         <p style="color:var(--text-muted); margin-bottom:24px; line-height:1.7;">
-          O atendimento médico online para o tratamento com a caneta emagrecedora vai ajudar você a perder o peso necessário para melhorar sua saúde e bem-estar.
+          A consulta médica online para o tratamento com caneta emagrecedora vai auxiliar você a eliminar o peso necessário para melhorar sua saúde e qualidade de vida.
         </p>
         <ul class="benefits-list">
           <li>
             <div class="benefit-check">✓</div>
-            A orientação médica permite cuidar da perda de peso de forma saudável, sem medidas exageradas.
+            Com orientação médica, você cuida da perda de peso de forma equilibrada, sem medidas radicais.
           </li>
           <li>
             <div class="benefit-check">✓</div>
-            Toda caneta injetável para emagrecer atua em hormônios responsáveis pela fome e saciedade.
+            As canetas injetáveis para emagrecer agem nos hormônios que regulam a fome e a saciedade.
           </li>
           <li>
             <div class="benefit-check">✓</div>
-            A ação da caneta para emagrecimento controla o apetite e reduz a vontade de comer.
+            A caneta para emagrecimento atua no controle do apetite, reduzindo a vontade de comer.
           </li>
           <li>
             <div class="benefit-check">✓</div>
-            A alimentação regulada colabora para diminuir a gordura visceral e melhorar a composição corporal.
+            Uma alimentação equilibrada contribui para reduzir a gordura visceral e aprimorar a composição corporal.
           </li>
         </ul>
       </div>
@@ -841,41 +881,41 @@
         <div style="font-size:48px; text-align:center; margin-bottom:16px;">💉</div>
         <h3 style="font-size:20px; font-weight:700; text-align:center; margin-bottom:12px; color:var(--green-dark);">Canetas Emagrecedoras</h3>
         <p style="font-size:14px; color:var(--text-muted); text-align:center; line-height:1.6;">
-          Medicamentos injetáveis aprovados que atuam nos hormônios responsáveis pela fome, promovendo maior saciedade e controle do apetite.
+          Medicamentos injetáveis aprovados que agem nos hormônios da fome, proporcionando mais saciedade e melhor controle do apetite.
         </p>
       </div>
     </div>
     <p style="font-size:14px; color:var(--text-muted); background:white; border:1px solid var(--border); border-radius:var(--radius-sm); padding:20px 24px; line-height:1.6; margin-bottom:40px;">
-      ⚕️ As canetas injetáveis para emagrecer só podem ser usadas após avaliação e indicação médica. Conte com os profissionais da Emagrecimento Medico para orientar sobre o tratamento para emagrecer adequado para você.
+      ⚕️ O uso de canetas injetáveis para emagrecer requer avaliação e indicação médica. Os profissionais da Emagrecimento Medico estão prontos para orientar você sobre o tratamento mais adequado.
     </p>
-    <a href="#" class="btn btn-primary btn-center">QUERO FAZER UMA CONSULTA</a>
+    <a href="#agendamento" class="btn btn-primary btn-center">QUERO FAZER UMA CONSULTA</a>
   </div>
 </section>
 
 <!-- MEDICATIONS -->
 <section class="medications">
   <div class="container">
-    <h2 class="section-title">Canetas emagrecedoras recomendadas por especialistas</h2>
+    <h2 class="section-title">Canetas emagrecedoras indicadas por especialistas</h2>
 
     <div class="med-grid">
       <!-- Mounjaro -->
       <div class="med-card">
         <div class="med-img-wrap">
-          <img src="https://emagrecer.mediquo.com.br/images/Mounjaro - Tirzepatida.png"
+          <img src="images/mounjaro-tirzepatida.png"
                alt="Mounjaro (Tirzepatida)"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="med-img-placeholder" style="display:none;">💉</div>
         </div>
         <div class="med-content">
           <h3>Mounjaro (Tirzepatida)</h3>
-          <p>É um medicamento injetável altamente eficaz no tratamento da obesidade ou sobrepeso. A ação combinada dos hormônios GLP-1 e GIP melhora o controle do apetite, regula os níveis de açúcar no sangue e favorece a perda de peso.</p>
-          <h4>Ao usar a caneta emagrecedora Mounjaro você:</h4>
+          <p>Medicamento injetável de alta eficácia para o tratamento da obesidade e do sobrepeso. A ação conjunta dos hormônios GLP-1 e GIP aprimora o controle do apetite, equilibra os níveis de glicose no sangue e potencializa a perda de peso.</p>
+          <h4>Com a caneta emagrecedora Mounjaro, você:</h4>
           <ul class="med-list">
-            <li>reduzirá seu desejo por comida;</li>
-            <li>sentirá maior saciedade após as refeições;</li>
-            <li>diminuirá a gordura visceral;</li>
-            <li>melhorará sua composição corporal;</li>
-            <li>irá prevenir doenças relacionadas à obesidade.</li>
+            <li>terá menos desejo por comida;</li>
+            <li>sentirá mais saciedade depois das refeições;</li>
+            <li>reduzirá a gordura visceral;</li>
+            <li>melhorará a composição corporal;</li>
+            <li>ajudará a prevenir doenças associadas à obesidade.</li>
           </ul>
         </div>
       </div>
@@ -883,20 +923,20 @@
       <!-- Ozempic -->
       <div class="med-card reverse">
         <div class="med-img-wrap">
-          <img src="https://emagrecer.mediquo.com.br/images/Ozempic - Semaglutida.png"
+          <img src="images/ozempic-semaglutida.png"
                alt="Wegovy / Ozempic (Semaglutida)"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="med-img-placeholder" style="display:none;">💉</div>
         </div>
         <div class="med-content">
           <h3>Wegovy / Ozempic (Semaglutida)</h3>
-          <p>É um medicamento injetável desenvolvido inicialmente para tratar a diabetes tipo 2, mas também eficaz no tratamento para perda de peso. A substância imita a ação do hormônio GLP-1, que controla o apetite e promove saciedade.</p>
-          <h4>Ao usar a caneta emagrecedora Ozempic você:</h4>
+          <p>Medicamento injetável desenvolvido originalmente para o tratamento do diabetes tipo 2, que também se mostrou eficaz na perda de peso. Sua substância reproduz a ação do hormônio GLP-1, controlando o apetite e aumentando a saciedade.</p>
+          <h4>Com a caneta emagrecedora Ozempic, você:</h4>
           <ul class="med-list">
-            <li>beneficiará sua saúde cardiovascular;</li>
-            <li>irá prevenir o desenvolvimento de doenças associadas à obesidade;</li>
-            <li>sentirá maior saciedade após as refeições;</li>
-            <li>reduzirá seu desejo por comida.</li>
+            <li>favorecerá a saúde cardiovascular;</li>
+            <li>ajudará a evitar doenças relacionadas à obesidade;</li>
+            <li>terá mais saciedade depois das refeições;</li>
+            <li>sentirá menos vontade de comer.</li>
           </ul>
         </div>
       </div>
@@ -904,20 +944,20 @@
       <!-- Saxenda -->
       <div class="med-card">
         <div class="med-img-wrap">
-          <img src="https://emagrecer.mediquo.com.br/images/Saxenda - Liraglutida.png"
+          <img src="images/saxenda-liraglutida.png"
                alt="Saxenda (Liraglutida)"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="med-img-placeholder" style="display:none;">💉</div>
         </div>
         <div class="med-content">
           <h3>Saxenda (Liraglutida)</h3>
-          <p>É um medicamento injetável que provoca no organismo a mesma ação do hormônio GLP-1. É aprovado para perda de peso em adultos com obesidade ou sobrepeso e indicado para regular o apetite e aumentar a saciedade.</p>
-          <h4>Ao usar a caneta emagrecedora Saxenda você:</h4>
+          <p>Medicamento injetável que reproduz no organismo a ação do hormônio GLP-1. Aprovado para perda de peso em adultos com obesidade ou sobrepeso, atua na regulação do apetite e no aumento da saciedade.</p>
+          <h4>Com a caneta emagrecedora Saxenda, você:</h4>
           <ul class="med-list">
-            <li>diminuirá o peso corporal;</li>
-            <li>consumirá porções menores de alimentos nas refeições;</li>
-            <li>irá prevenir o desenvolvimento de doenças associadas à obesidade;</li>
-            <li>reduzirá seu desejo por comida.</li>
+            <li>reduzirá o peso corporal;</li>
+            <li>ingerirá porções menores nas refeições;</li>
+            <li>ajudará a prevenir doenças ligadas à obesidade;</li>
+            <li>terá menos vontade de comer.</li>
           </ul>
         </div>
       </div>
@@ -925,7 +965,7 @@
 
     <div class="expert-tip">
       <strong>👉 Dica do especialista Emagrecimento Medico</strong>
-      Você pode potencializar o efeito das canetas emagrecedoras se incluir no tratamento uma dieta regulada de baixo teor calórico e a prática regular de atividade física.
+      Para potencializar os resultados das canetas emagrecedoras, inclua no seu tratamento uma alimentação controlada e de baixo teor calórico, junto com a prática regular de exercícios físicos.
     </div>
   </div>
 </section>
@@ -933,15 +973,15 @@
 <!-- TESTIMONIALS -->
 <section class="testimonials">
   <div class="container">
-    <h2 class="section-title">Tratamento para emagrecer com confiança</h2>
+    <h2 class="section-title">Emagreça com confiança e segurança</h2>
     <p style="text-align:center; opacity:0.85; margin:-28px auto 40px; max-width:600px;">
-      Veja as recomendações de quem já iniciou o tratamento com a caneta para emagrecer pela Emagrecimento Medico.
+      Confira o que dizem os pacientes que já começaram o tratamento com a caneta para emagrecer pela Emagrecimento Medico.
     </p>
 
     <div class="rating-bar">
       <div class="rating-stars">★★★★★</div>
       <div class="rating-text">Nota média: 4,9/5</div>
-      <div class="rating-sub">baseada em milhares de atendimentos</div>
+      <div class="rating-sub">com base em milhares de atendimentos</div>
     </div>
 
     <div class="testimonials-grid">
@@ -955,86 +995,86 @@
       </div>
     </div>
 
-    <a href="#" class="btn btn-primary btn-center">QUERO COMEÇAR MEU TRATAMENTO</a>
+    <a href="#agendamento" class="btn btn-primary btn-center">QUERO COMEÇAR MEU TRATAMENTO</a>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="faq">
   <div class="container">
-    <h2 class="section-title">Queremos que você se sinta bem, sem dúvidas</h2>
+    <h2 class="section-title">Tire todas as suas dúvidas antes de começar</h2>
 
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Quanto tempo demora para começar a consulta?
+          Em quanto tempo minha consulta começa?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Após a confirmação do pagamento, sua consulta é iniciada em até 10 minutos. Caso haja algum imprevisto, você pode realizá-la em até 24 horas.
+          Depois da confirmação do pagamento, a consulta tem início em até 10 minutos. Se surgir algum imprevisto, é possível realizá-la em até 24 horas.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Vou receber uma receita para comprar a caneta emagrecedora?
+          Recebo a receita para adquirir a caneta emagrecedora?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Sim! Se o médico avaliar que o tratamento é adequado para você, uma receita digital é emitida em minutos e é válida em todo o Brasil.
+          Sim! Caso o médico considere o tratamento indicado para o seu caso, a receita digital é emitida em poucos minutos, com validade em todo o território nacional.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          O atendimento é pelo WhatsApp ou pelo App Emagrecimento Medico?
+          A consulta acontece pelo WhatsApp ou pelo App Emagrecimento Medico?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          O atendimento é realizado pelo App Emagrecimento Medico, disponível para iOS e Android. É rápido, seguro e totalmente sigiloso.
+          A consulta é feita pelo App Emagrecimento Medico, disponível para iOS e Android. Tudo de forma rápida, segura e totalmente sigilosa.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          A caneta para emagrecer é um medicamento seguro?
+          A caneta emagrecedora é um medicamento seguro?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Sim, quando utilizada sob orientação médica adequada. Os medicamentos disponíveis são aprovados pela ANVISA e recomendados por especialistas para o tratamento da obesidade e sobrepeso.
+          Sim, desde que utilizada com acompanhamento médico adequado. Os medicamentos disponíveis são aprovados pela ANVISA e recomendados por especialistas no tratamento da obesidade e do sobrepeso.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Posso parcelar o pagamento da consulta?
+          É possível parcelar o valor da consulta?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Sim! Você pode pagar por PIX ou parcelar no cartão de crédito. Escolha a opção mais conveniente para você no momento da confirmação.
+          Sim! O pagamento pode ser feito via PIX ou parcelado no cartão de crédito. Basta escolher a forma mais conveniente na hora de confirmar.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Posso fazer a consulta pelo meu plano de saúde?
+          A consulta pode ser feita pelo plano de saúde?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          No momento, o atendimento pela Emagrecimento Medico não é coberto por planos de saúde. A consulta é paga diretamente pelo valor de R$ 69,90.
+          Atualmente, o atendimento pela Emagrecimento Medico não possui cobertura por planos de saúde. O valor da consulta é de R$ 69,90, pago diretamente.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Preciso ter o encaminhamento de outro especialista para fazer a consulta pelo Emagrecimento Medico?
+          É necessário encaminhamento de outro especialista para consultar pelo Emagrecimento Medico?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Não! Você fala diretamente com o médico, sem triagens ou encaminhamentos. É tudo simples, rápido e sem burocracia.
+          Não! O contato é direto com o médico, sem necessidade de triagens ou encaminhamentos. Tudo de forma simples, ágil e desburocratizada.
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFAQ(this)">
-          Há uma triagem ou direcionamento para médico específico?
+          Existe triagem ou encaminhamento para um médico específico?
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Não há triagem. Você é atendido diretamente por um médico da Emagrecimento Medico, especializado no tratamento para emagrecer.
+          Não existe triagem. O atendimento é feito diretamente com um médico da Emagrecimento Medico, especialista em tratamentos para emagrecimento.
         </div>
       </div>
     </div>
@@ -1044,9 +1084,9 @@
 <!-- CTA FINAL -->
 <section class="cta-final">
   <div class="container">
-    <h2>Não deixe para amanhã o tratamento para emagrecer que você pode iniciar hoje</h2>
-    <p>Aproveite a consulta 100% online para falar com o médico e já começar a usar a caneta para emagrecer.</p>
-    <a href="#" class="btn btn-primary">FAZER A CONSULTA AGORA</a>
+    <h2>Comece hoje o tratamento para emagrecer que vai transformar sua vida</h2>
+    <p>Faça sua consulta 100% online, converse com o médico e dê o primeiro passo para usar a caneta emagrecedora.</p>
+    <a href="#agendamento" class="btn btn-primary">FAZER A CONSULTA AGORA</a>
   </div>
 </section>
 
@@ -1055,15 +1095,15 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand">Emagrecimento Medico</div>
-      <div class="footer-tagline">Consultas médicas online com prescrição rápida, segura e legal.</div>
+      <div class="footer-tagline">Consultas médicas online com prescrição ágil, segura e dentro da lei.</div>
     </div>
     <div class="footer-badge">
-      🔒 Consulta 100% segura e sigilosa
+      🔒 Atendimento 100% seguro e sigiloso
     </div>
     <div class="footer-links">
-      <a href="https://mediquo.com.br/">Sobre</a>
-      <a href="/termos-de-uso">Termos de Uso</a>
-      <a href="/politicas-de-privacidade">Políticas de Privacidade</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="termos-de-uso.html">Termos de Uso</a>
+      <a href="politicas-de-privacidade.html">Politicas de Privacidade</a>
     </div>
     <div class="footer-crm">Dr Eugenio Gracietti Streliaev. CRM-SC 6604</div>
   </div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Emagrecimento Medico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #0F6148;
+      --green-light: #5BA832;
+      --green-dark: #0A4533;
+      --green-bg: #E8F5F0;
+      --text: #1A1A1A;
+      --text-muted: #4A5E55;
+      --white: #FFFFFF;
+      --border: #C8E0D4;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; }
+    h1, h2, h3 { font-family: 'Merriweather', serif; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      background: var(--green);
+      padding: 20px 0;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { color: var(--white); font-family: 'Merriweather', serif; font-size: 20px; font-weight: 700; text-decoration: none; }
+    .back-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .back-link:hover { color: var(--white); }
+
+    .page-hero {
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+      padding: 60px 0;
+      color: var(--white);
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 32px; margin-bottom: 12px; }
+    .page-hero p { font-size: 17px; opacity: 0.85; }
+
+    .content { padding: 60px 0; }
+    .content h2 { font-size: 22px; color: var(--green); margin: 40px 0 16px; }
+    .content h2:first-child { margin-top: 0; }
+    .content p { margin-bottom: 16px; color: var(--text-muted); font-size: 16px; }
+    .content ul { margin: 0 0 16px 24px; color: var(--text-muted); font-size: 16px; }
+    .content li { margin-bottom: 8px; }
+
+    .highlight-box {
+      background: var(--green-bg);
+      border-left: 4px solid var(--green-light);
+      padding: 24px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 32px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.7);
+      padding: 32px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a { color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 12px; }
+    footer a:hover { color: var(--white); }
+    .footer-brand { font-family: 'Merriweather', serif; font-weight: 700; font-size: 16px; color: var(--white); margin-bottom: 8px; }
+    .footer-links { margin: 16px 0; }
+    .footer-crm { margin-top: 12px; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">Emagrecimento Medico</a>
+    <a href="index.html" class="back-link">Voltar ao inicio</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Sobre</h1>
+    <p>Conheça a Emagrecimento Medico e nossa missão</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <h2>Quem somos</h2>
+    <p>A Emagrecimento Medico é um serviço médico especializado no tratamento para emagrecimento com canetas injetáveis, oferecendo consultas online com profissionais qualificados e comprometidos com a saúde e o bem-estar dos pacientes.</p>
+
+    <h2>Nossa missão</h2>
+    <p>Facilitar o acesso a tratamentos médicos seguros e eficazes para emagrecimento, proporcionando atendimento prático e de qualidade por meio da telemedicina, com a conveniência da sua carteirinha UNIMED.</p>
+
+    <div class="highlight-box">
+      <p>Nosso compromisso é com a sua saúde. Todas as consultas são realizadas por médicos habilitados que avaliam individualmente cada paciente antes de qualquer prescrição.</p>
+    </div>
+
+    <h2>Como funciona</h2>
+    <p>Oferecemos consultas médicas online para avaliação e prescrição de canetas emagrecedoras como Mounjaro (Tirzepatida), Ozempic/Wegovy (Semaglutida) e Saxenda (Liraglutida). O atendimento é realizado pelo aplicativo da UNIMED, de forma rápida e segura.</p>
+
+    <h2>Nossos valores</h2>
+    <ul>
+      <li>Atendimento humanizado e individualizado</li>
+      <li>Segurança e sigilo médico</li>
+      <li>Acessibilidade e praticidade</li>
+      <li>Compromisso com resultados seguros</li>
+    </ul>
+
+    <h2>Responsável técnico</h2>
+    <p>Dr Eugenio Gracietti Streliaev — CRM-SC 6604</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Emagrecimento Medico</div>
+  <div class="footer-links">
+    <a href="sobre.html">Sobre</a>
+    <a href="termos-de-uso.html">Termos de Uso</a>
+    <a href="politicas-de-privacidade.html">Politicas de Privacidade</a>
+  </div>
+  <div class="footer-crm">Dr Eugenio Gracietti Streliaev. CRM-SC 6604</div>
+</footer>
+
+</body>
+</html>

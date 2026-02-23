@@ -6,7 +6,9 @@
       "Bash(git config:*)",
       "Bash(git push:*)",
       "Bash(git remote:*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(curl:*)",
+      "Bash(file:*)"
     ]
   }
 }
